@@ -2,23 +2,23 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Jogo de Roleta</title>
+<title>Roleta com Animação e Saldo</title>
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: #0b0b0b;
+        background: #0d0d0d;
         color: white;
         text-align: center;
         padding: 20px;
     }
 
     .container {
-        max-width: 400px;
+        max-width: 450px;
         margin: auto;
         padding: 20px;
         background: #1b1b1b;
         border-radius: 10px;
-        box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 15px #000;
     }
 
     select, input {
@@ -30,7 +30,7 @@
     }
 
     button {
-        background: red;
+        background: #c40000;
         color: white;
         padding: 12px 25px;
         border: none;
@@ -39,8 +39,25 @@
         font-size: 16px;
     }
 
-    button:hover {
-        background: #b50000;
+    button:hover { background: #a00000; }
+
+    #saldoBox {
+        font-size: 22px;
+        margin-bottom: 10px;
+        background: #111;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* ROLETAAAA */
+    .roleta {
+        width: 200px;
+        height: 200px;
+        background: url('https://i.imgur.com/6Xg2fJq.png'); /* imagem redonda de roleta */
+        background-size: cover;
+        border-radius: 50%;
+        margin: 20px auto;
+        transition: transform 4s cubic-bezier(.17,.67,.83,.67);
     }
 
     #resultado {
@@ -49,13 +66,4 @@
         font-weight: bold;
     }
 </style>
-</head>
-<body>
-
-<h1>🎰 Jogo de Roleta</h1>
-
-<div class="container">
-    <label>Tipo de aposta:</label>
-    <select id="tipoAposta" onchange="mostrarOpcoes()">
-        <option value="numero">Número exato (35x)</option>
-        <option value="cor">Vermelho / Preto (2x)</op
+</head
